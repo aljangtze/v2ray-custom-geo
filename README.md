@@ -1,7 +1,15 @@
 # v2ray-custom-geo
 
 ## 自定义 geosite.dat & geoip.dat 文件
-
+## 准备
+    git clone https://github.com/aljangtze/v2ray-custom-geo.git
+    tar -C /usr/local/ -xzf go1.12.7.linux-amd64.tar.gz    
+    export PATH=$PATH;/usr/local/go/bin
+    export GOPATH=/usr/local/go
+    export PATH=$PATH:/usr/local/go/bin
+    go get github.com/gogo/protobuf
+    go get github.com/v2ray/v2ray-core
+    go get go.starlark.net/syntax
 ### 使用
 
   - 修改/添加 sites 文件夹下的域名文件，运行 ./v2sitedat 生成 geosite.dat
